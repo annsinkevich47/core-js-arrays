@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-assign */
 /* ********************************************************************************************
  *                                                                                            *
  * Please read the following tutorial before implementing tasks:                               *
@@ -20,8 +21,10 @@
  *    getIntervalArray(0, 100) => [ 0, 1, 2, ..., 100 ]
  *    getIntervalArray(3, 3) => [ 3 ]
  */
-function getIntervalArray(/* start, end */) {
-  throw new Error('Not implemented');
+function getIntervalArray(start, end) {
+  let leng = Math.abs(start - end);
+  leng += 1;
+  return Array.from({ length: leng }, (_, index) => index + start);
 }
 
 /**
