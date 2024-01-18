@@ -383,7 +383,7 @@ function selectMany(arr, childrenSelector) {
 function calculateBalance(arr) {
   const newArr = [];
   arr.map((element) =>
-    element.reduce(function (accumulator, currentValue) {
+    element.reduce(function calculate(accumulator, currentValue) {
       return newArr.push(accumulator - currentValue);
     })
   );
@@ -509,7 +509,7 @@ function getIndicesOfOddNumbers(numbers) {
  *    getHexRGBValues([]) => []
  */
 function getHexRGBValues(arr) {
-  const convert = arr.map(function (element) {
+  const convert = arr.map(function getHex(element) {
     const conv = parseInt(element, 10).toString(16);
     return `#${conv.toUpperCase().padStart(6, '0')}`;
   });
