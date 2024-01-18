@@ -1,4 +1,3 @@
-/* eslint-disable no-multi-assign */
 /* ********************************************************************************************
  *                                                                                            *
  * Please read the following tutorial before implementing tasks:                               *
